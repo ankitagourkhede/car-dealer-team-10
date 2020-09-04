@@ -28,11 +28,6 @@ export class LoginComponent implements OnInit {
 async loginProcessHere() {
   const data = this.fbFormGroup.value;
 
-
-
-
-
-
   sessionStorage.setItem('sid', 'true');
     this.router.navigate(['home']);
   //ajax call
