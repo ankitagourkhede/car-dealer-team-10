@@ -33,7 +33,7 @@ async loginProcessHere() {
   //ajax call
   //const url = 'http://localhost:3600/auth-user';
   //const result: any = await this.http.post(url, data).toPromise();
-  if (data.username === ADMIN && data.password === ADMIN) {
+  if (result.opr) {
     sessionStorage.setItem('sid', 'true');
     this.router.navigate(['home']);
   } else {
